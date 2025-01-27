@@ -24,8 +24,11 @@ export default {
 </script>
 
 <style>
-  #red {
-    font-weight: bold ;
-    color: rgb(144, 12, 12);
+  #app > div {
+    border: dashed black 1px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightgreen;
   }
 </style>

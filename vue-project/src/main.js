@@ -9,7 +9,7 @@ import PersonalProfile from './components/PersonalProfile.vue'
 
 const app = createApp(App)
 app.component('food-item', FoodItem)
-app.component('country',Country)
+app.component('country', Country)
 app.component('food-item2', FoodItem2)
 app.component('personal-profile', PersonalProfile)
 app.component('comment-form', CommentForm)

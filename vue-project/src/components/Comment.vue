@@ -1,14 +1,12 @@
 <template>
-  <div class="comments-container">
-    <h1 class="comments-title">Comments</h1>
-    <ul class="comments-list">
-      <li v-for="comment in comments" :key="comment.id" class="comment-item">
-        <strong>{{ comment.name }}</strong>
-        <p>{{ comment.comment }}</p>
-      </li>
+    <h1>Comments</h1>
+    <ul>
+      <li v-for="comment in comments" :key="comment.id">{{ comment.name }} {{ comment.comment }}</li>
     </ul>
-  </div>
-</template>
+  </template>
+  
+  <script></script>
+
 
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -24,7 +22,9 @@ async function getComments() {
 onMounted(() => {
   getComments()
 })
+
 </script>
+
 
 <style scoped>
 /* Container for the comments section */

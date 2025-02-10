@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+
 import FoodItem from './components/FoodItem.vue'
 import Country from './components/Country.vue'
 import FoodItem2 from './components/FoodItem2.vue'
@@ -15,3 +16,4 @@ app.component('personal-profile', PersonalProfile)
 app.component('comment-form', CommentForm)
 app.component('comment', Comment)
 app.mount('#app')
+

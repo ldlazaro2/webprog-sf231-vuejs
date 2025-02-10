@@ -19,9 +19,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, defineComponent } from 'vue'; // Correct import - ONLY ONCE
 import { supabase } from '../lib/supabaseClient'
-
 
 const name = ref('');
 const comment = ref('');
@@ -66,7 +65,6 @@ label {
 }
 
 .form-control {
-
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -74,7 +72,6 @@ label {
 }
 
 .btn {
-
   padding: 0.5rem 1rem;
   background-color: #007bff;
   color: white;
